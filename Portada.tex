@@ -1,0 +1,37 @@
+%\clearpage
+
+\newfontfamily\Arial[Ligatures=TeX]{Arial}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+{
+	\Arial
+	\newgeometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+	\setstretch{1.5}
+	\thispagestyle{empty}
+	\begin{center}
+		% Encabezado
+		\includegraphics[width=0.5\paperwidth]{images/vertical_COMILLAS_COLOR.jpg}\\
+
+		\fontsize{16pt}{18pt}\selectfont\MakeUppercase{\Centro}\\
+
+		\vspace{0.5cm}		
+		
+		\fontsize{16pt}{18pt}\MakeUppercase{\Titulacion}\\
+
+		\vspace{2cm}
+
+		% Título
+		\fontsize{22pt}{36pt}\textbf{\MakeUppercase{\Titulo}}
+
+		\vspace{1cm}
+
+		% Autor
+		\normalsize
+		Autor: \Autor\\
+		Director: \Director\\
+		\vfill
+		\textbf{\MakeUppercase{Madrid}}\\
+		\Fecha
+		\end{center}
+	\restoregeometry
+}
